@@ -1,0 +1,13 @@
+elf file for understanding how debugging and compilation process works
+download the GNU tools for separate debugging tools which aren't available in keil
+go to cmd in administration mode
+
+don't do setx like this, it truncates:
+setx /M PATH "%PATH%;C:\Users\Yasmin\Downloads\arm-gnu-toolchain-14.2.rel1-mingw-w64-x86_64-arm-none-eabi\bin"
+
+do this:
+set PATH=%PATH%;C:\Users\Yasmin\Downloads\arm-gnu-toolchain-14.2.rel1-mingw-w64-x86_64-arm-none-eabi\bin
+
+check version:
+arm-none-eabi-objdump --version
+
