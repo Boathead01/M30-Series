@@ -1,4 +1,4 @@
-elf file for understanding how debugging and compilation process works
+.elf file for understanding how debugging and compilation process works, in our ARM, we have .axf
 download the GNU tools for separate debugging tools which aren't available in keil
 go to cmd in administration mode
 
@@ -10,4 +10,11 @@ set PATH=%PATH%;C:\Users\Yasmin\Downloads\arm-gnu-toolchain-14.2.rel1-mingw-w64-
 
 check version:
 arm-none-eabi-objdump --version
+
+to disassemble:
+locate to the code file path, in this case Level1_GPIO_Ctrl
+arm-none-eabi-objdump.exe -d Level1_GPIO_Ctrl.axf
+
+-d is taken from the objdump library, which can be viewed by:
+arm-none-eabi-objdump.exe
 
