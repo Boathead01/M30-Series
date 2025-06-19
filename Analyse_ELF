@@ -17,4 +17,5 @@ arm-none-eabi-objdump.exe -d Level1_GPIO_Ctrl.axf
 
 -d is taken from the objdump library, which can be viewed by:
 arm-none-eabi-objdump.exe
+-s is to look at the whole memory allocation for both code and data, memory represented in hex value
 
