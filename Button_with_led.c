@@ -81,7 +81,7 @@ int main(void){
 	}
 }
 
-void GPIO_PAPB_IRQHandler(void){
+void GPABGH_IRQHandler(void){           // not GPIO_PAPB_IRQHandler
 	if (GPIO_GET_INT_FLAG(PB,BIT4)){
 		sw1_interface=1;
 		LED = 0;
