@@ -7,6 +7,7 @@ void Set_Priority(){
 }
 //acc to datasheet :
 //    		. Note that priority “0” is treated as the fourth priority on the system, after three system exceptions “Reset”, “NMI” and “Hard Fault”.
+// those three interrupts are in -1 -2 -3, the highest priority and are fixed, so no chance of making our pririty the first , as in -3.
 volatile int sw1_interface =0;
 int sw1_cnt=0;
 
