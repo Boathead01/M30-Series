@@ -5,7 +5,8 @@
 void Set_Priority(){
 	NVIC_SetPriority(GPIO_PAPB_IRQn, 0xFFFFFF3F); //u can also give 0 instead of bit pattern, 0 is the highest prioirty and 3 is the lowest
 }
-
+//acc to datasheet :
+//    		. Note that priority “0” is treated as the fourth priority on the system, after three system exceptions “Reset”, “NMI” and “Hard Fault”.
 volatile int sw1_interface =0;
 int sw1_cnt=0;
 
